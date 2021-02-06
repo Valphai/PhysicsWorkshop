@@ -1,7 +1,7 @@
 # wykres z 1 tabeli,
 
 from LatexRead import LatexRead
-from Niepewnosci import a,u
+from Uncertainty import a,u
 from math import sqrt,pi
 
 kolumny = LatexRead()

@@ -1,6 +1,6 @@
 from statistics import mean
 from LatexRead import LatexRead
-import Niepewnosci as niep
+import Uncertainty as niep
 
 kolumny = LatexRead()
 x1 = [x*1E-3 for x in kolumny["K0"]]

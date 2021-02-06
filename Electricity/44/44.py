@@ -1,5 +1,5 @@
 from LatexRead import LatexRead
-from Niepewnosci import a,u
+from Uncertainty import a,u
 from math import sqrt,pi
 
 kolumny = LatexRead()
@@ -15,6 +15,7 @@ R = [
     16,
     33
 ]
+
 def Z(a):
     return 1/a
 
@@ -49,5 +50,5 @@ C3 = 4 * C1
 
 # print(L1,L2,L3)
 # print(uZ(U1,I1),uZ(U2,I2),uZ(U3,I3))
-print(uy(U1,I1,R[0]),uy(U2,I2,R[0]+R[1]),uy(U3,I3,R[0]+R[1]+R[2]))
+# print(uy(U1,I1,R[0]),uy(U2,I2,R[0]+R[1]),uy(U3,I3,R[0]+R[1]+R[2]))
 # print(C1,C2,C3)
