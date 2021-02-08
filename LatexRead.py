@@ -2,7 +2,7 @@ from os import path
 import re
 
 def LatexRead():
-    root = "D:\Zadania\pracownia"
+    root = "D:\Zadania\pracownia\PhysicsWorkshop"
     FileName = "dane.txt"
     fil = path.join(root, FileName)
 
@@ -26,3 +26,5 @@ def LatexRead():
             return kolumny
 
     return DivideByColumn()
+
+# print(LatexRead())
