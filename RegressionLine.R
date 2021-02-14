@@ -1,5 +1,7 @@
+# You have to set working directory first
+
 library(reticulate)
-use_python("D:/python")
+use_python("C:/Users/Maneq/AppData/Local/Programs/Python/Python37")
 source_python('LatexRead.py')
 tab = LatexRead() # tab[["K4"]]
 

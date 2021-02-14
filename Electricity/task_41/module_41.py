@@ -1,8 +1,8 @@
-from LatexRead import LatexRead
+import LatexRead as lr
 from Uncertainty import a,u,ux
 from math import pi
 
-kolumny = LatexRead()
+kolumny = lr.LatexRead()
 U = kolumny["K0"][0:10] 
 I1 = [x*1E-3 for x in kolumny["K1"][0:10]]
 I2 = [x*1E-3 for x in kolumny["K1"][10:20]]

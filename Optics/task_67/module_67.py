@@ -1,9 +1,9 @@
-from LatexRead import LatexRead
+import LatexRead as lr
 from Uncertainty import ux
 from statistics import mean
 from math import sqrt
 
-kolumny = LatexRead()
+kolumny = lr.LatexRead()
 a0 = kolumny["K1"]
 a10 = kolumny["K2"]
 ax = kolumny["K3"]

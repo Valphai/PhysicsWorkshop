@@ -1,8 +1,8 @@
-from LatexRead import LatexRead
+import LatexRead as lr
 from Uncertainty import a,u
 from math import sqrt,pi
 
-kolumny = LatexRead()
+kolumny = lr.LatexRead()
 U1 = kolumny["K0"] 
 I1 = [x*1E-3 for x in kolumny["K1"]]
 U2 = kolumny["K2"]
