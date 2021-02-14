@@ -30,10 +30,6 @@ def fui(x,y):
     dividedNums = op.divide(op.PowerList(2, bd(x,y)),l)
     return op.FloatTimesList((1/4), op.substract(l, dividedNums))
 
-def f2():
-    return ()
-
-
 # print("d = {}".format(bd(bpom, apow)))
 
 # print("pom: f = {}".format(f(apom, bpom)))

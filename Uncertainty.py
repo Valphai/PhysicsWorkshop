@@ -8,7 +8,7 @@ from statistics import mean
 ##########################
 def D(x):
     n = len(x)
-    squared_numbers = list(map(op.square, x))
+    squared_numbers = op.PowerList(2, x)
     return n*sum(squared_numbers)-sum(x)**2
 
 @op.Beautify
@@ -21,12 +21,12 @@ def u(x,y): # u(a)
     n = len(x)
 
     def b(x,y):
-        squared_numbers = list(map(op.square, x))
+        squared_numbers = op.PowerList(2, x)
         return ((sum(squared_numbers)*sum(y))-(sum(x)*sum(op.multiply(x,y))))/D(x)
 
     def sy(x,y):
         addThis = op.AddFloatToList(b(x,y),op.FloatTimesList(a(x,y), x))
-        squared_numbers = list(map(op.square, op.substract(y,addThis)))
+        squared_numbers = op.PowerList(2, op.substract(y,addThis))
         return sqrt((sum(squared_numbers)/(n-2)))
 
     return sy(x,y)*sqrt(n/D(x))
@@ -35,6 +35,6 @@ def u(x,y): # u(a)
 def ux(x):
     n = len(x)
     diff = op.SubstractFromList(mean(x),x)
-    squared_numbers = list(map(op.square, diff))
+    squared_numbers = op.PowerList(2, diff)
     return sqrt((1/(n*(n-1)))*sum(squared_numbers))
 ########################## 

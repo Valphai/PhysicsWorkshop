@@ -1,7 +1,4 @@
 ########################## operatrions on list elements
-def square(number):
-    return number ** 2
-
 def multiply(x,y):
     return [a*b for a, b in zip(x, y)]
 
