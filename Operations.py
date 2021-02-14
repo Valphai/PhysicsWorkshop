@@ -18,15 +18,18 @@ def Beautify(item):
         return eval("%.6f" % item(*args))
     return solution
 ########################## TypeError: can't multiply sequence by non-int of type 'float'
-def FloatTimesList(fl,li):
-    return [x*fl for x in li]
-
 def PowerList(fl,li):
     return [x**fl for x in li]
+
+def FloatTimesList(fl,li):
+    return [x*fl for x in li]
 
 def AddFloatToList(fl,li):
     return [x+fl for x in li]
 
 def SubstractFromList(fl,li):
     return [x-fl for x in li]
+
+def DivideListBy(fl,li):
+    return [x/fl for x in li]
 ########################## 

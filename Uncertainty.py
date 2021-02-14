@@ -32,6 +32,7 @@ def u(x,y): # u(a)
     return sy(x,y)*sqrt(n/D(x))
 
 ########################## wzor (2) == (17)
+@op.Beautify
 def ux(x):
     n = len(x)
     diff = op.SubstractFromList(mean(x),x)

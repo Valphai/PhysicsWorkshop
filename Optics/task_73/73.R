@@ -1,7 +1,7 @@
 library(reticulate)
 use_python("C:/Users/Maneq/AppData/Local/Programs/Python/Python37")
 source_python('LatexRead.py')
-tab = LatexRead() # tab[["K4"]]
+tab = LatexRead(6L,6L) # tab[["K4"]]
 
 df = data.frame(tab)
 
@@ -26,6 +26,6 @@ library(ggplot2)
 ggplot(dff, aes(x=x, y=U)) +
   geom_point(size = 0.2) + 
   xlab(xax) + ylab(yax) +
-  geom_errorbar(data=dff,aes(ymin=U - niepY, ymax= U + niepY),width=.1) +
+  geom_errorbar(data=dff,aes(ymin=U - niepY, ymax= U + niepY)) +
   geom_errorbarh(data=dff,aes(xmin=x - niepX, xmax=x + niepX))
   

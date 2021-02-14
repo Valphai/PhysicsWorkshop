@@ -1,10 +1,6 @@
-# wykres z 1 tabeli,
+import Uncertainty as un
 
-import LatexRead as lr
-from Uncertainty import a,u
-from math import sqrt,pi
+v = [344, 343.33, 354.375, 352, 359.375]
 
-kolumny = lr.LatexRead()
-x1 = [x*1E-2 for x in kolumny["K0"]]
-x2 = [x*1E-2 for x in kolumny["K1"]]
+print("u(y) = {}\nU(y)= {}".format(un.ux(v),un.ux(v) * 3))
 

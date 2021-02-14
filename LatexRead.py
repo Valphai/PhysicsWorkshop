@@ -24,4 +24,4 @@ def LatexRead(ileCol, wynikCol):# (ile jest kolumn, co ile kolejny wynik w kolum
 
     return DivideByColumn()
 
-# print(LatexRead(3,3))
+# print(LatexRead(6,6))

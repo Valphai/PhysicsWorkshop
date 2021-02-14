@@ -3,7 +3,7 @@ library(reticulate)
 
 use_python("C:/Users/Maneq/AppData/Local/Programs/Python/Python37")
 source_python('LatexRead.py')
-tab = LatexRead() # tab[["K4"]]
+tab = LatexRead(4L,4L) # tab[["K4"]]
 
 df = data.frame(tab)
 
@@ -41,7 +41,7 @@ ggplot(dff, aes(x=t, y=R13, color = Oporniki)) +
   geom_errorbarh(data=dff,aes(xmin=t - niepX, xmax=t + niepX))
 
 yax2 = "ln(R)[\u03a9]"
-xax2 = "1/T[K]"
+xax2 = "1/T[K^-1]"
 
 ggplot(df2, aes(x=t2temp, y=R2temp)) +
   geom_point(size = 0.2) + 
