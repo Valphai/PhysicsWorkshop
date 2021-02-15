@@ -13,7 +13,7 @@ uxImax = 0.228924
 # t = kolumny["K0"]
 # A = kolumny["K1"] # mu A
 
-@op.BeautifyList
+@op.Beautify
 def uF():
     substr = op.SubstractFromList(Imin,Ial)
     div = op.DivideListBy((Imax-Imin)**2, substr)

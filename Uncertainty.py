@@ -38,4 +38,4 @@ def ux(x):
     diff = op.SubstractFromList(mean(x),x)
     squared_numbers = op.PowerList(2, diff)
     return sqrt((1/(n*(n-1)))*sum(squared_numbers))
-########################## 
+##########################

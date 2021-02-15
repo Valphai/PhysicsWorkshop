@@ -7,16 +7,20 @@ def divide(x,y):
 
 def substract(li1, li2):
     return [a-b for a, b in zip(li1,li2)]
-
-def BeautifyList(item): # For list of solutions
-    def solutions(*args):
-        return [float(i) for i in ["%.6f" % i for i in item(*args)]]
-    return solutions
-##########################  For one solution
-def Beautify(item): 
+########################## Decorator cuts decimal points to nth place
+def Beautify(item, decimalPoints=6): 
     def solution(*args):
-        return eval("%.6f" % item(*args))
-    return solution
+        return eval("%.{}f".format(decimalPoints) % item(*args))
+
+    def listSolution(*args):
+        return [float(i) for i in ["%.{}f".format(decimalPoints) % i for i in item(*args)]]
+    
+    def decide(*args):
+        if isinstance(item(*args), float):
+            return solution(*args)
+        else:
+            return listSolution(*args)
+    return decide
 ########################## TypeError: can't multiply sequence by non-int of type 'float'
 def PowerList(fl,li):
     return [x**fl for x in li]

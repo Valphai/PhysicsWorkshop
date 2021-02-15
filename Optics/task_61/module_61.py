@@ -21,11 +21,11 @@ l = kolumny["K2"]
 def bd(x,y): # for b and d
     return op.substract(x,y)
 
-@op.BeautifyList
+@op.Beautify
 def f(x,y):
     return [(a*b)/(a+b) for a, b in zip(x, y)]
 
-@op.BeautifyList
+@op.Beautify
 def fui(x,y):
     dividedNums = op.divide(op.PowerList(2, bd(x,y)),l)
     return op.FloatTimesList((1/4), op.substract(l, dividedNums))
