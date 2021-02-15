@@ -25,7 +25,8 @@ def R(r):
     multip_numbers = un.FloatTimesList(lamb,OneToNList(len(r)))
     return un.BeautifyList(un.divide(squared_numbers,multip_numbers))
 
-bezDwoch =  [i for i in R(Promienie(dx,dy)) if i not in (4.13347, 4.151725)] # 6 i 8 prazek
+if __name__ == "__main__":
+    bezDwoch =  [i for i in R(Promienie(dx,dy)) if i not in (4.13347, 4.151725)] # 6 i 8 prazek
 
-print("{}\n{}\n{}\n{}\n{}".format(Srednie(dx,dy), Promienie(dx,dy),bezDwoch,
-                                  mean(bezDwoch),un.ux(bezDwoch)))
+    print("{}\n{}\n{}\n{}\n{}".format(Srednie(dx,dy), Promienie(dx,dy),bezDwoch,
+                                    mean(bezDwoch),un.ux(bezDwoch)))

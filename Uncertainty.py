@@ -4,7 +4,7 @@ from statistics import mean
 
 # Always remember to convert units
 
-# PROSTA REGRESJI
+# REGRESSION LINE
 ##########################
 def D(x):
     n = len(x)
@@ -30,8 +30,7 @@ def u(x,y): # u(a)
         return sqrt((sum(squared_numbers)/(n-2)))
 
     return sy(x,y)*sqrt(n/D(x))
-
-########################## wzor (2) == (17)
+########################## equation (2) == (17)
 @op.Beautify
 def ux(x):
     n = len(x)

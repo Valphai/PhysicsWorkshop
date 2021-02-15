@@ -17,9 +17,10 @@ def Rho(U,I,l):
         return 1/a(U,I)
     return (R(U,I)*S)/l
 
-# print((Rho(U,I1,l[0])+Rho(U,I2,l[1])+Rho(U,I3,l[2])+Rho(U,I4,l[3])+Rho(U,I5,l[4]))/5)
+# if __name__ == "__main__":
+    # print((Rho(U,I1,l[0])+Rho(U,I2,l[1])+Rho(U,I3,l[2])+Rho(U,I4,l[3])+Rho(U,I5,l[4]))/5)
 
-# print(ux([Rho(U,I1,l[0]),Rho(U,I2,l[1]),Rho(U,I3,l[2]),Rho(U,I4,l[3]),Rho(U,I5,l[4])]))
+    # print(ux([Rho(U,I1,l[0]),Rho(U,I2,l[1]),Rho(U,I3,l[2]),Rho(U,I4,l[3]),Rho(U,I5,l[4])]))
 
-# print(a(U,I1),a(U,I2),a(U,I3),a(U,I4),a(U,I5))
-# print(u(U,I1),u(U,I2),u(U,I3),u(U,I4),u(U,I5))
+    # print(a(U,I1),a(U,I2),a(U,I3),a(U,I4),a(U,I5))
+    # print(u(U,I1),u(U,I2),u(U,I3),u(U,I4),u(U,I5))

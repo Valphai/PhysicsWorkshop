@@ -7,8 +7,9 @@ def divide(x,y):
 
 def substract(li1, li2):
     return [a-b for a, b in zip(li1,li2)]
-########################## Decorator cuts decimal points to nth place
+########################## 
 def Beautify(item, decimalPoints=6): 
+    """As a decorator cuts decimal points to nth place"""
     def solution(*args):
         return eval("%.{}f".format(decimalPoints) % item(*args))
 
