@@ -30,17 +30,14 @@ def fui(x,y):
     dividedNums = op.divide(op.PowerList(2, bd(x,y)),l)
     return op.FloatTimesList((1/4), op.substract(l, dividedNums))
 
-# if __name__ == "__main__":
+# print("d = {}".format(bd(bpom, apow)))
 
-    # print("d = {}".format(bd(bpom, apow)))
+# print("pom: f = {}".format(f(apom, bpom)))
+# print("pow: f = {}".format(f(apow, bpow)))
+# print("f_sr = {}".format(mean(f(apom, bpom) + f(apow, bpow))))
+# print("u(f) = {}".format(un.ux(f(apom, bpom) + f(apow, bpow))))
 
-    # print("pom: f = {}".format(f(apom, bpom)))
-    # print("pow: f = {}".format(f(apow, bpow)))
-    # print("f_sr = {}".format(mean(f(apom, bpom) + f(apow, bpow))))
-    # print("u(f) = {}".format(un.ux(f(apom, bpom) + f(apow, bpow))))
-
-    # print("f2 = {}\nf_s2 = {}\n u2(f) = {}".format(fui(apow[:9],bpom[:9]), mean(fui(apow[:9],bpom[:9])),
-    #                                                                     un.ux(fui(apow[:9],bpom[:9]))))
-    # print("f3 = {}\nf_s3 = {}\n u3(f) = {}".format(fui(apow[9:],bpom[9:]), mean(fui(apow[9:],bpom[9:])),
-    #                                                                     un.ux(fui(apow[9:],bpom[9:]))))
-
+# print("f2 = {}\nf_s2 = {}\n u2(f) = {}".format(fui(apow[:9],bpom[:9]), mean(fui(apow[:9],bpom[:9])),
+#                                                                     un.ux(fui(apow[:9],bpom[:9]))))
+# print("f3 = {}\nf_s3 = {}\n u3(f) = {}".format(fui(apow[9:],bpom[9:]), mean(fui(apow[9:],bpom[9:])),
+#                                                                     un.ux(fui(apow[9:],bpom[9:]))))

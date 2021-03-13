@@ -19,6 +19,5 @@ def uF():
     div = op.DivideListBy((Imax-Imin)**2, substr)
     return op.FloatTimesList(uxImax, div)
 
-if __name__ == "__main__":
-    # print("u(I_max) = {}".format(un.ux(A)))
-    print("u(F) = {}".format(uF()))
+# print("u(I_max) = {}".format(un.ux(A)))
+print("u(F) = {}".format(uF()))

@@ -18,6 +18,5 @@ def katy():
         return (bx()/b10())*c
     return "b10 {}, bx {}, cx {}".format(b10(), bx(), cx())
 
-if __name__ == "__main__":
-    print("srednie: a0 {}, a10 {}, ax {},\n{},\nu(a0) {}, u(a10) {}, u(ax) {}".format(
-                            mean(a0),mean(a10),mean(ax),katy(),ux(a0),ux(a10),ux(ax)))
+print("srednie: a0 {}, a10 {}, ax {},\n{},\nu(a0) {}, u(a10) {}, u(ax) {}".format(
+                        mean(a0),mean(a10),mean(ax),katy(),ux(a0),ux(a10),ux(ax)))

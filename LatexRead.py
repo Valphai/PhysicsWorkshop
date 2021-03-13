@@ -1,10 +1,10 @@
-from os import path
+import os
 import re
 
 def LatexRead(ileCol, wynikCol):# (ile jest kolumn, co ile kolejny wynik w kolumnie)
-    root = "D:\Zadania\pracownia\PhysicsWorkshop"
+    root = os.getcwd()
     FileName = "dane.txt"
-    fil = path.join(root, FileName)
+    fil = os.path.join(root, FileName)
 
     kolumny = {"K{}".format(i) : [] for i in range(ileCol)}
 
@@ -23,5 +23,3 @@ def LatexRead(ileCol, wynikCol):# (ile jest kolumn, co ile kolejny wynik w kolum
             return kolumny
 
     return DivideByColumn()
-
-print(LatexRead(4,4))

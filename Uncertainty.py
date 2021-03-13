@@ -2,8 +2,6 @@ import Operations as op
 from math import sqrt
 from statistics import mean
 
-# Always remember to convert units
-
 # REGRESSION LINE
 ##########################
 def D(x):
